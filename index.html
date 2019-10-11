@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Factory</title>
+    <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+	<header>
+		<h1>Movie Factory</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="title">
+			<h2>Movies</h2>
+			<!-- <button id="sort"><i class="fa fa-caret-down fa-lg"></i> Sort</button> -->
+			<div class="dropdown">
+				<select id="sort">
+					<option value="sortIt">Sort by</option>
+					<option value="popularity">Popularity</option>
+					<option value="year">Release Year</option>
+					<option value="alphabet">A - Z</option>
+				</select>
+			</div>
+		</div>
+
+		<content><!-- MOVIE TILES --></content>
+
+
+
+	</main>
+
+	<footer>
+		<p>Movie Factory &copy Haris Kravarevic 2019</p>
+	</footer>
+
+	<script src="js/mydata.json"></script>
+	<script src="js/myscript.js"></script>
+
+</body>
+
+</html>

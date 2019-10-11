@@ -1,0 +1,194 @@
+
+
+/* ---------- SET COLORS ---------- */
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%; }
+
+body {
+  color: #E8EFFC;
+  font-family: "Open Sans Condensed", sans-serif; }
+
+/* ---------- HEADER ---------- */
+header h1 {
+  font-size: 3.6rem;
+  text-align: center;
+  background-color: #0E1521;
+  padding: 1rem; }
+header nav {
+  background-color: #2A3F65;
+  padding: 0.5rem 0; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: inline;
+      font-size: 2rem;
+      padding: 2rem; }
+      header nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #E8EFFC; }
+
+/* ---------- MAIN SECTION ---------- */
+main {
+  width: 100%;
+  background-color: #1C2A43; }
+  main .title {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    main .title h2 {
+      flex-shrink: 0;
+      font-size: 2.8rem;
+      margin: 0 auto;
+      padding-left: 10rem; }
+    main .title .dropdown select {
+      direction: rtl;
+      text-indent: 0.05rem;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #E8EFFC;
+      border: none;
+      background-color: inherit;
+      cursor: pointer;
+      outline: none;
+      vertical-align: middle;
+      padding: 0.5rem 0.5rem 0 0.5rem; }
+    main .title .dropdown select:hover {
+      background-color: #6495ED;
+      border-radius: 3%; }
+      main .title .dropdown select:hover option {
+        color: #0E1521; }
+
+/* ---------- Movie tiles ---------- */
+content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 2rem 2rem 10rem; }
+  content article {
+    width: 47%;
+    margin-bottom: 2rem;
+    background-color: #0E1521;
+    display: flex;
+    justify-content: space-between; }
+    content article img {
+      width: 45%;
+      height: auto;
+      margin: 1rem;
+      border-radius: 3%;
+      box-shadow: 0 0rem 1.7rem 0 rgba(206, 206, 206, 0.2);
+      object-fit: cover;
+      border: 0.09rem solid rgba(206, 206, 206, 0.5); }
+    content article .info {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1; }
+      content article .info .description h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem; }
+      content article .info .description p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem; }
+
+/* ---------- "Like button" ---------- */
+.likes {
+  align-self: flex-end;
+  display: flex;
+  align-items: center; }
+  .likes button {
+    border: none;
+    background-color: inherit;
+    font-size: 1.9rem;
+    color: #08f92e;
+    cursor: pointer;
+    display: inline-block;
+    align-content: center;
+    padding: 0.6rem;
+    margin-right: 0.5rem;
+    outline: none; }
+  .likes button:active {
+    color: #E8EFFC;
+    background-color: #08f92e;
+    border-radius: 5%; }
+  .likes .counter {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 4.1rem;
+    height: 4.1rem;
+    background-color: #08f92e;
+    border-radius: 50%; }
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #0E1521;
+  padding: 1.5rem; }
+  footer p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: bold; }
+
+/* ---------- MEDIA QUERIES ---------- */
+@media only screen and (min-width: 2067px) {
+  * {
+    font-size: 150%; } }
+@media only screen and (max-width: 1067px) {
+  * {
+    font-size: 90%; } }
+@media only screen and (max-width: 940px) {
+  * {
+    font-size: 85%; }
+
+  .likes button {
+    font-size: 1.615rem; }
+  .likes .counter {
+    font-size: 2.55rem;
+    width: 3.485rem;
+    height: 3.485rem; } }
+@media only screen and (max-width: 874px) {
+  article {
+    flex-direction: column; }
+    article img {
+      width: 90% !important;
+      align-self: center;
+      height: 25vw !important;
+      object-fit: cover; } }
+@media only screen and (max-width: 640px) {
+  * {
+    font-size: 95%; }
+
+  header {
+    text-align: center; }
+    header h1 {
+      padding: 3rem; }
+
+  main .title {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    main .title h2 {
+      padding: 0; }
+    main .title .dropdown select {
+      margin-top: 2rem;
+      direction: ltr;
+      background-color: #2A3F65;
+      border-radius: 3%;
+      padding-bottom: 0.5rem; }
+
+  content article {
+    width: 100%; }
+    content article img {
+      height: 50vw !important; } }
+
+/*# sourceMappingURL=mystyle.css.map */

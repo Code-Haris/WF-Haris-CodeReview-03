@@ -1,0 +1,256 @@
+/* ---------- SET COLORS ---------- */
+
+$main-color: #0E1521 //#101010
+$background-color: #1C2A43 // #171E25
+$nav-color: #2A3F65 //#434343
+$font-color: #E8EFFC //#CECECE
+$btn-color: #08f92e /* CornflowerBlue */ //#2FA33B
+
+
+/* ---------- GLOBAL ---------- */
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-size: 100%
+
+body
+	color: $font-color
+	font-family: 'Open Sans Condensed', sans-serif
+
+/* ---------- HEADER ---------- */
+
+header
+
+	h1
+		font-size: 3.6rem
+		text-align: center
+		background-color: $main-color
+		padding: 1rem
+
+	nav
+		background-color: $nav-color
+		padding: 0.5rem 0
+
+		ul
+			list-style: none
+
+			li
+				display: inline
+				font-size: 2rem
+				padding: 2rem
+
+				a
+					text-decoration: none
+					font-weight: bold
+					color: $font-color
+
+/* ---------- MAIN SECTION ---------- */
+
+main
+	width: 100%
+	background-color: $background-color
+
+	.title
+		padding: 2rem
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+
+		h2
+			flex-shrink: 0
+			font-size: 2.8rem
+			margin: 0 auto
+			padding-left: 10rem
+
+		.dropdown
+
+			select
+				direction: rtl
+				text-indent: 0.05rem
+				font-family: 'Open Sans Condensed', sans-serif
+				font-size: 2rem
+				font-weight: bold
+				color: $font-color
+				border: none
+				background-color: inherit
+				cursor: pointer
+				outline: none
+				vertical-align: middle
+				padding: 0.5rem 0.5rem 0 0.5rem
+
+				// use the following to style select later
+				//-webkit-appearance: none
+				//moz-appearance: none
+				//appearance: none
+
+			select:hover
+				background-color: $btn-color
+				border-radius: 3%
+
+				option
+					color: $main-color
+
+		// button
+		// 	font-size: 1.8rem
+		// 	font-weight: bold
+		// 	border: none
+		// 	background-color: inherit
+		// 	color: $font-color
+		// 	cursor: pointer
+		// 	outline: none
+		// 	font-weight: normal
+
+
+/* ---------- Movie tiles ---------- */
+
+content
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	padding: 2rem 2rem 10rem
+
+	article
+		width: 47%
+		margin-bottom: 2rem
+		background-color: $main-color
+		display: flex
+		justify-content: space-between
+
+		img
+			width: 45%
+			height: auto
+			margin: 1rem
+			border-radius: 3%
+			box-shadow: 0 0rem 1.7rem 0 rgba(206,206,206, 0.2)
+			object-fit: cover
+			border: 0.09rem solid rgba(206,206,206, 0.5)
+		.info
+			padding: 1rem
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			flex: 1
+
+			.description
+
+				h3
+					font-size: 2rem
+					margin-bottom: 1rem
+
+				p
+					font-size: 1.4rem
+					margin-bottom: 1rem
+
+
+/* ---------- "Like button" ---------- */
+
+.likes
+	align-self: flex-end
+	display: flex
+	align-items: center
+
+	button
+		border: none
+		background-color: inherit
+		font-size: 1.9rem
+		color: $btn-color
+		cursor: pointer
+		display: inline-block
+		align-content: center
+		padding: 0.6rem
+		margin-right: 0.5rem
+		outline: none
+
+	button:active
+		color: $font-color
+		background-color: $btn-color
+		border-radius: 5%
+
+	.counter
+		display: inline-block
+		font-size: 3rem
+		font-weight: bold
+		text-align: center
+		width: 4.1rem
+		height: 4.1rem
+		background-color: $btn-color
+		border-radius: 50%
+
+/* ---------- FOOTER ---------- */
+
+footer
+	background-color: $main-color
+	padding: 1.5rem
+
+	p
+		text-align: center
+		font-size: 2rem
+		padding: 2rem
+		font-weight: bold
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media only screen and (min-width: 2067px)
+	*
+		font-size: 150%
+
+@media only screen and (max-width: 1067px)
+	*
+		font-size: 90%
+
+@media only screen and (max-width: 940px)
+	*
+		font-size: 85%
+
+	.likes
+		button
+			font-size: 1.9rem * 0.85
+		.counter
+			font-size: 3rem * 0.85
+			width: 4.1rem * 0.85
+			height: 4.1rem * 0.85
+
+@media only screen and (max-width: 874px)
+	article
+		flex-direction: column
+
+		img
+			width: 90% !important //didn't work without it
+			align-self: center
+			height: 25vw !important //didn't work
+			object-fit: cover
+
+@media only screen and (max-width: 640px)
+	*
+		font-size: 95%
+
+	header
+		text-align: center
+
+		h1
+			padding: 3rem
+
+	main .title
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+
+		h2
+			padding: 0
+
+		.dropdown select
+			margin-top: 2rem
+			direction: ltr
+			background-color: $nav-color
+			border-radius: 3%
+			padding-bottom: 0.5rem
+
+	content
+		article
+			width: 100%
+
+			img
+				height: 50vw !important

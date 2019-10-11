@@ -1,0 +1,62 @@
+films = [{
+	"filmTitle": "Joker",
+	"filmYear": 2019,
+	"filmImage": "img/joker.jpg",
+	"filmDescription": "In Gotham City, mentally-troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: 'The Joker'.",
+	"filmLikes": 0,
+
+}, {
+	"filmTitle": "Taxi Driver",
+	"filmYear": 1976,
+	"filmImage": "img/taxi.jpg",
+	"filmDescription": "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.",
+	"filmLikes": 0
+}, {
+	"filmTitle": "The Shawshank Redemption",
+	"filmYear": 1994,
+	"filmImage": "img/redemption.jpg",
+	"filmDescription": "Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.",
+	"filmLikes": 0
+}, {
+	"filmTitle": "The Godfather",
+	"filmYear": 1972,
+	"filmImage": "img/godfather.jpg",
+	"filmDescription": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+	"filmLikes": 0
+}, {
+	"filmTitle": "Brightburn",
+	"filmYear": 2019,
+	"filmImage": "img/brightburn.jpg",
+	"filmDescription": "What if a child from another world crash-landed on Earth, but instead of becoming a hero to mankind, he proved to be something far more sinister?",
+	"filmLikes": 0
+}, {
+	"filmTitle": "Time Trap",
+	"filmYear": 2017,
+	"filmImage": "img/timetrap.jpg",
+	"filmDescription": "A professor enters a cave and goes missing. Some of his students come looking for him and get trapped in the cave as well.",
+	"filmLikes": 0
+}, {
+	"filmTitle": "Gladiator",
+	"filmYear": 2010,
+	"filmImage": "img/gladiator.jpg",
+	"filmDescription": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+	"filmLikes": 0
+},{
+	"filmTitle": "Interstellar",
+	"filmYear": 2014,
+	"filmImage": "img/interstellar.jpg",
+	"filmDescription": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+	"filmLikes": 0
+},{
+	"filmTitle": "Schindler's List",
+	"filmYear": 1993,
+	"filmImage": "img/slist.jpg",
+	"filmDescription": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+	"filmLikes": 0
+},{
+	"filmTitle": "Pulp Fiction",
+	"filmYear": 1994,
+	"filmImage": "img/fiction.jpg",
+	"filmDescription": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+	"filmLikes": 0
+}]
